@@ -53,7 +53,7 @@
     left: 50%;
     max-height: calc(100vh - (var(--gutter) * 2));
     max-width: var(--lg);
-    min-height: unset;
+    min-height: 300px;
     overflow-y: auto;
     position: fixed;
     top: 50%;
