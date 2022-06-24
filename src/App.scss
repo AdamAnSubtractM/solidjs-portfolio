@@ -1,3 +1,40 @@
-.header {
-  color: red;
+:root {
+  --gutter: 2rem;
+  --rounded-corners: 0.875rem;
+  --sm: 640px;
+  --md: 768px;
+  --lg: 1024px;
+  --xl: 1280px;
+  --2xl: 1536px;
+  --max: 200px;
+  --layer0: 0;
+  --layer1: 1;
+  --layer2: 250;
+  --layer3: 500;
+  --layer4: 750;
+  --layer5: 1000;
+  --layer6: 9999;
+  --font-main: "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --bold: 700;
+  --normal: 500;
+}
+
+:where(h1, h2, h3, h4, h5, h6) {
+  font-weight: var(--bold);
+  line-height: 1.25;
+}
+
+html,
+body {
+  position: relative;
+  font-family: var(--font-main);
+  font-weight: var(--normal);
+  * {
+    font-family: inherit;
+  }
+}
+
+button,
+a {
+  cursor: pointer;
 }

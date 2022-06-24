@@ -1,0 +1,63 @@
+.modal {
+  background-color: coral;
+  inset: 0;
+  min-height: 100vh;
+  overflow-y: auto;
+  position: fixed;
+  width: 100vw;
+  z-index: var(--layer6);
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 2rem;
+  }
+  header,
+  &__body {
+    overflow-y: auto;
+    padding: var(--gutter);
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: 0;
+    }
+  }
+  header {
+    align-items: center;
+    background-color: inherit;
+    border-bottom: 1px solid lightblue;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: var(--gutter);
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+  }
+  &__backdrop {
+    left: 50%;
+    min-height: 100vh;
+    min-width: 100vw;
+    overflow: hidden;
+    position: fixed;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: var(--layer5);
+  }
+  @media (min-width: 768px) {
+    border-radius: var(--rounded-corners);
+    left: 50%;
+    max-height: calc(100vh - (var(--gutter) * 2));
+    max-width: var(--lg);
+    min-height: unset;
+    overflow-y: auto;
+    position: fixed;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(100vw - (var(--gutter) * 2));
+  }
+}

@@ -1,17 +1,68 @@
-import { Component, createSignal } from 'solid-js';
-import './App.scss';
-import Counter from './Counter';
+import "sanitize.css";
+import { Component } from "solid-js";
+import "./App.scss";
+import Modal from "./components/Modal/Modal";
 
 const App: Component = () => {
-  const [counter, setCounter] = createSignal(0);
-  setInterval(setCounter, 1000, (c: number) => c + 1);
-
   return (
     <>
-      <div>
-        <h1 class="header">{counter()}</h1>
-      </div>
-      <Counter />
+      <Modal heading="Testing Modal Componet" triggerType="primary-round">
+        <h3>Example Modal Body</h3>
+        <p>
+          Hello, world! Hello, world! Hello, world! Hello, world! Hello, world!{" "}
+          Hello, world! Hello, world! Hello, world! Hello, world! Hello, world!{" "}
+          Hello, world! Hello, world! Hello, world! Hello, world! Hello, world!{" "}
+          Hello, world! Hello, world! Hello, world! Hello, world! Hello, world!{" "}
+          Hello, world! Hello, world! Hello, world! Hello, world! Hello, world!{" "}
+          Hello, world! Hello, world! Hello, world! Hello, world! Hello, world!{" "}
+          Hello, world! Hello, world! Hello, world! Hello, world!{" "}
+        </p>
+        <p>
+          Hello, world! Hello, world! Hello, world! Hello, world! Hello, world!{" "}
+          Hello, world! Hello, world! Hello, world! Hello, world! Hello, world!{" "}
+          Hello, world! Hello, world! Hello, world! Hello, world! Hello, world!{" "}
+          Hello, world! Hello, world! Hello, world! Hello, world! Hello, world!{" "}
+          Hello, world! Hello, world! Hello, world! Hello, world! Hello, world!{" "}
+          Hello, world! Hello, world! Hello, world! Hello, world! Hello, world!{" "}
+          Hello, world! Hello, world! Hello, world! Hello, world!{" "}
+        </p>
+        <p>
+          Hello, world! Hello, world! Hello, world! Hello, world! Hello, world!{" "}
+          Hello, world! Hello, world! Hello, world! Hello, world! Hello, world!{" "}
+          Hello, world! Hello, world! Hello, world! Hello, world! Hello, world!{" "}
+          Hello, world! Hello, world! Hello, world! Hello, world! Hello, world!{" "}
+          Hello, world! Hello, world! Hello, world! Hello, world! Hello, world!{" "}
+          Hello, world! Hello, world! Hello, world! Hello, world! Hello, world!{" "}
+          Hello, world! Hello, world! Hello, world! Hello, world!{" "}
+        </p>
+        <p>
+          Hello, world! Hello, world! Hello, world! Hello, world! Hello, world!{" "}
+          Hello, world! Hello, world! Hello, world! Hello, world! Hello, world!{" "}
+          Hello, world! Hello, world! Hello, world! Hello, world! Hello, world!{" "}
+          Hello, world! Hello, world! Hello, world! Hello, world! Hello, world!{" "}
+          Hello, world! Hello, world! Hello, world! Hello, world! Hello, world!{" "}
+          Hello, world! Hello, world! Hello, world! Hello, world! Hello, world!{" "}
+          Hello, world! Hello, world! Hello, world! Hello, world!{" "}
+        </p>
+        <p>
+          Hello, world! Hello, world! Hello, world! Hello, world! Hello, world!{" "}
+          Hello, world! Hello, world! Hello, world! Hello, world! Hello, world!{" "}
+          Hello, world! Hello, world! Hello, world! Hello, world! Hello, world!{" "}
+          Hello, world! Hello, world! Hello, world! Hello, world! Hello, world!{" "}
+          Hello, world! Hello, world! Hello, world! Hello, world! Hello, world!{" "}
+          Hello, world! Hello, world! Hello, world! Hello, world! Hello, world!{" "}
+          Hello, world! Hello, world! Hello, world! Hello, world!{" "}
+        </p>
+        <p>
+          Hello, world! Hello, world! Hello, world! Hello, world! Hello, world!{" "}
+          Hello, world! Hello, world! Hello, world! Hello, world! Hello, world!{" "}
+          Hello, world! Hello, world! Hello, world! Hello, world! Hello, world!{" "}
+          Hello, world! Hello, world! Hello, world! Hello, world! Hello, world!{" "}
+          Hello, world! Hello, world! Hello, world! Hello, world! Hello, world!{" "}
+          Hello, world! Hello, world! Hello, world! Hello, world! Hello, world!{" "}
+          Hello, world! Hello, world! Hello, world! Hello, world!{" "}
+        </p>
+      </Modal>
     </>
   );
 };
