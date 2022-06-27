@@ -15,12 +15,13 @@
   --layer5: 1000;
   --layer6: 9999;
   --font-main: "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --bold: 700;
-  --normal: 500;
+  --font-size-base: 1.25rem;
+  --font-weight-bold: 700;
+  --font-weight-normal: 500;
 }
 
 :where(h1, h2, h3, h4, h5, h6) {
-  font-weight: var(--bold);
+  font-weight: var(--font-weight-bold);
   line-height: 1.25;
 }
 
@@ -28,7 +29,7 @@ html,
 body {
   position: relative;
   font-family: var(--font-main);
-  font-weight: var(--normal);
+  font-weight: var(--font-weight-normal);
   * {
     font-family: inherit;
   }
@@ -37,4 +38,13 @@ body {
 button,
 a {
   cursor: pointer;
+}
+
+p,
+a,
+li,
+button,
+input,
+textarea {
+  font-size: var(--font-size-base);
 }
