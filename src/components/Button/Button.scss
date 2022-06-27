@@ -1,0 +1,10 @@
+.button {
+  background: none;
+  border: 1px solid;
+  cursor: pointer;
+  padding: calc(var(--gutter) / 2) var(--gutter);
+  text-align: center;
+  &--primary-round {
+    border-radius: var(--rounded-pill);
+  }
+}

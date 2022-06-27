@@ -5,6 +5,7 @@ import {
   createEffect,
   onCleanup,
 } from "solid-js";
+import Button from "../Button/Button";
 import "./Modal.scss";
 
 type ModalProps = {
@@ -79,7 +80,9 @@ const Modal: Component<ModalProps> = (props) => {
 
   return (
     <>
-      <button onClick={() => setIsOpen(true)}>Open Modal</button>
+      <Button type="button" onClick={() => setIsOpen(true)}>
+        Open Modal
+      </Button>
       {isOpen() && (
         <>
           <div class="modal__backdrop" onClick={() => setIsOpen(false)}></div>
